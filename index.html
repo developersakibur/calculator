@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Input Fields Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Personal Calculator</h1>
+  </header>
+  <div id="inputRowsContainer">
+    <div class="header">
+      <h1>Input Section</h1>
+    </div>
+    <div class="input-row">
+      <div class="name-box"><input type="text" class="name-input" placeholder="Name" /></div>
+      <div class="quantity-box"><input type="number" class="quantity-input" placeholder="Pice" min="0" /></div>
+      <div class="value-box"><input type="number" class="value-input" placeholder="Value" min="0" /></div>
+      <div class="total-box"><input type="number" class="total-output" placeholder="Total" readonly /></div>
+      <div class="btn-box"><button type="button" class="add-row-btn">+</button><button type="button"
+          class="remove-row-btn">-</button></div>
+    </div>
+  </div>
+  <div id="outputSection">
+    <div class="header">
+      <h1>Output Section</h1>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>Pice</th>
+          <th>Value</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="outputTableBody"></tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">All Total:</th>
+          <th id="allTotalOutput" style="background-color: #007bff; color: #fff"></th>
+        </tr>
+        <tr>
+          <th colspan="5" style="border: none; padding: 0"><button id="copyButton">Copy Output</button></th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div class="info">
+    <div class="header">
+      <h1>Developer Information</h1>
+    </div>
+    <div class="content">
+      <div class="img"><img src="Developer Sakibur.jpg" alt="Developer Sakibur" /></div>
+      <div class="contact">
+        <h1>Developer Sakibur</h1>
+        <h2>Phone: <a href="tel:+8801894659483">+8801894659483</a></h2>
+        <h2>Email: <a href="mailto:developersakibur@gmail.com">developersakibur@gmail.com</a></h2>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
